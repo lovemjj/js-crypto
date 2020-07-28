@@ -1,3 +1,5 @@
+const crypto = require('crypto')
+
 /**
  * @description
  * 对称加密
@@ -29,3 +31,8 @@ function cipherivDecrypt(data, algorithm, key, iv) {
     decrypted += decipher.final('utf8');
     return decrypted
 }
+
+module.exports = {
+    cipherivEncrypt,
+    cipherivDecrypt
+};

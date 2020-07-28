@@ -1,3 +1,5 @@
+const crypto = require('crypto')
+
 /**
  * @description
  * 对称加密
@@ -31,6 +33,6 @@ function cipherivDecrypt(data, algorithm, key, iv) {
 }
 
 module.exports = {
-    cipherivDecrypt,
-    cipherivEncrypt
+    cipherivEncrypt,
+    cipherivDecrypt
 };
